@@ -1,0 +1,93 @@
+:root{
+  --primary-color: #00dac4;
+  --primary-colorAlt: #00c7d8;
+  --seconday-color: #f9f871;
+  --accent-color: #a62f6b;
+}
+
+$primaryColor: var(--primary-color);
+$secondaryColor: var(--secondary-color);
+
+body{
+  background: #f5f5f5 !important;
+}
+
+h3{
+  font-size: 1rem;
+  margin-bottom: 0 !important;
+}
+
+.image-container{
+  width: 100%;
+  height: auto;
+  img{
+    width: 100%;
+  }
+}
+
+.btn-float{
+  position: fixed;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 50% !important;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.tile-image{
+  width: 25%;
+  
+}
+
+i{
+  &.sm{
+    font-size: 1rem;
+  }
+  &.md{
+    font-size: 1.5rem;
+  }
+  &.lg{
+    font-size: 2.5rem;
+  }
+}
+
+.tee{
+
+  /** Navbar **/
+  &-navbar{
+    background: linear-gradient(var(--primary-color), var(--primary-colorAlt)) !important;
+    padding-bottom: 0;
+
+    .tee-logo{
+      h3{
+        color: #f3f32e;
+        text-shadow: 0 4px 4px rgba($color: #1d1d1d, $alpha: .8);
+        span{
+          color: white;
+          text-shadow: 0 4px 4px rgba($color: #1d1d1d, $alpha: .8);
+        }
+      }
+    }
+    .tee-humberger{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        font-size: 1.2rem;
+        color: #fff;
+      }
+    }
+    
+
+  }
+
+  &-tile{
+    border-radius: 1.5rem !important;
+  }
+
+
+
+}
